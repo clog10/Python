@@ -25,7 +25,7 @@ print(type(c))
 name = 'John Doe'
 print(name)
 print(type(name))
-# # Boolean
+# Boolean
 q = True
 print(q)
 print(type(q))
@@ -42,7 +42,7 @@ g = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 g[2] = 20
 print(g)
 
-# arreglos anidados
+# listas anidados
 h = [1, 2, [7, 8, 9], 3, 4]
 print(h)
 
@@ -255,4 +255,101 @@ if nombre in first_names:
 # obteniendo fecha y hora actual
 today = datetime.datetime.now()
 print(str(today))
+
+# Bucles
+
+# bucle while
+edad = 0
+while edad < 18:
+    edad = edad + 1
+    print("Felicidades, tienes: " + str(edad))
+
+# for
+secuencia = ["uno", "dos", "tres"]
+for elemento in secuencia:
+    print(elemento)
+
+# Continuamos con funciones
+
+
+def mi_funcion2(param1, param2):
+    # cadena que sirve para la documentación
+    """Esta funcion imprime los dos valores pasados como parametros"""
+    print(param1)
+    print(param2)
+
+
+mi_funcion2("hola", 2)
+
+
+def imprimir(texto, veces=5):
+    """Esta funcion imprime 5 veces el parametro dado"""
+    print(veces * texto)
+
+
+imprimir("hola")
+# si se le indica otro valor, será este el que se utilice
+imprimir("hola", 2)
+
+# Para definir funciones con un número variable de argumentos
+# coloca-mos un último parámetro para la función cuyo nombre
+# debe preceder-se de un signo *
+
+
+def varios(param1, param2, *otros):
+    for val in otros:
+        print(val)
+
+
+varios(1, 2)
+varios(1, 2, 3)
+varios(1, 2, 3, 4)
+
+# En el siguiente ejemplo se utiliza la función items de los
+# diccionarios, que devuelve una lista con sus elementos, para
+# imprimir los parámetros que contiene el diccionario.
+
+
+def varios(param1, param2, **otros):
+    for i in otros.items():
+        print(i)
+
+
+varios(1, 2, tercero=3)
+
+
+# En este ejemplo se hace uso del método append de las listas.
+# Un método no es más que una función que pertenece a un objeto,
+#  en este caso a una lista; y append, en concreto, sirve para añadir
+# un elemento a una lista.
+
+def f(x, y):
+    x = x + 3
+    y.append(23)
+    print(x, y)
+
+
+x = 22
+y = [22]
+f(x, y)
+print(x, y)
+
+
+# Veamos por último cómo devolver valores,
+# para lo que se utiliza la palabra clave return
+
+def sumar(x, y):
+    return x + y
+
+
+print(sumar(3, 2))
+
+# También podríamos pasar varios valores que retornar a return
+
+
+def f(x, y):
+    return x * 2, y * 2
+
+
+a, b = f(1, 2)
 
