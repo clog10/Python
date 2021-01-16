@@ -320,7 +320,7 @@ varios(1, 2, tercero=3)
 
 # En este ejemplo se hace uso del método append de las listas.
 # Un método no es más que una función que pertenece a un objeto,
-#  en este caso a una lista; y append, en concreto, sirve para añadir
+# en este caso a una lista; y append, en concreto, sirve para añadir
 # un elemento a una lista.
 
 def f(x, y):
