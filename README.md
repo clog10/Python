@@ -1,5 +1,8 @@
 #  Aprendiendo Python
 
+<p align="center">
+<img src="https://github.com/clog10/Python/blob/master/img.png">
+</p>
 
 
 ## Primeros Pasos en Python
