@@ -26,4 +26,23 @@
 
 ## Excepciones
 
+## Módulos y Paquetes
+- Módulos
+- Paquetes
+
+## Entrada/Salida y Ficheros
+- Entrada estandar
+- Salida estandar
+- Archivos
+    - Lectura de archivos
+    - Escritura de archivos
+
+## Expresiones regulares
+- Patrones
+- Usando el módulo <strong>re</strong>
+
+## Sockets
+
+## Interactuar con webs
+
 
